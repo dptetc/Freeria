@@ -1,0 +1,5 @@
+H:\Freeria\obj\x86\Debug\Freeria.csprojResolveAssemblyReference.cache
+H:\Freeria\bin\Debug\Freeria.exe
+H:\Freeria\bin\Debug\Freeria.pdb
+H:\Freeria\obj\x86\Debug\Freeria.exe
+H:\Freeria\obj\x86\Debug\Freeria.pdb

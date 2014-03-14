@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{EB3BBE0D-D18F-456D-916C-19973691A7C4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>Freeria</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <StartupObject>Freeria.Program</StartupObject>
+    <ApplicationIcon>Freeria.ico</ApplicationIcon>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\DartPower\AppData\Roaming\ICSharpCode\SharpDevelop5\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Game" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics" />
+    <Reference Include="Microsoft.Xna.Framework.Xact" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Freeria\ChatLine.cs" />
+    <Compile Include="Freeria\Chest.cs" />
+    <Compile Include="Freeria\ClientSock.cs" />
+    <Compile Include="Freeria\Cloud.cs" />
+    <Compile Include="Freeria\Collision.cs" />
+    <Compile Include="Freeria\CombatText.cs" />
+    <Compile Include="Freeria\Dust.cs" />
+    <Compile Include="Freeria\Gore.cs" />
+    <Compile Include="Freeria\Item.cs" />
+    <Compile Include="Freeria\ItemText.cs" />
+    <Compile Include="Freeria\Lighting.cs" />
+    <Compile Include="Freeria\Liquid.cs" />
+    <Compile Include="Freeria\LiquidBuffer.cs" />
+    <Compile Include="Freeria\Main.cs" />
+    <Compile Include="Freeria\messageBuffer.cs" />
+    <Compile Include="Freeria\NetMessage.cs" />
+    <Compile Include="Freeria\Netplay.cs" />
+    <Compile Include="Freeria\NPC.cs" />
+    <Compile Include="Freeria\Player.cs" />
+    <Compile Include="Freeria\Program.cs" />
+    <Compile Include="Freeria\Projectile.cs" />
+    <Compile Include="Freeria\Recipe.cs" />
+    <Compile Include="Freeria\ServerSock.cs" />
+    <Compile Include="Freeria\Sign.cs" />
+    <Compile Include="Freeria\Star.cs" />
+    <Compile Include="Freeria\Tile.cs" />
+    <Compile Include="Freeria\WorldGen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft.Xna.Framework.RuntimeProfile" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
